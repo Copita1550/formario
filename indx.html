@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Mascota</title>
+    <link rel="stylesheet" href="css\estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registro de Mascota</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre de la Mascota:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="especie">Especie:</label>
+                <select id="especie" name="especie" required>
+                    <option value="">Seleccionar</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="oveja">oveja</option>
+                    <option value="vaca">vaca</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="raza">Raza (opcional):</label>
+                <input type="text" id="raza" name="raza">
+            </div>
+
+            <div class="form-group radio-group">
+                <label>Sexo:</label>
+                <label><input type="radio" name="sexo" value="macho" required> Macho</label>
+                <label><input type="radio" name="sexo" value="hembra" required> Hembra</label>
+            </div>
+
+            <div class="form-group">
+                <label for="fecha_nacimiento">Fecha de Nacimiento (opcional):</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion">Descripción (opcional):</label>
+                <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+            </div>
+
+            <button type="submit">Registrar Mascota</button>
+        </form>
+    </div>
+</body>
+
+</html>
